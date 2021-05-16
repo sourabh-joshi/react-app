@@ -28,7 +28,7 @@ const Login = () => {
         password
       });
       console.log(response);
-      redirectTo('/signup');
+      redirectTo('/home');
     } catch (error) {
       setErrorMessage(error.response.data);
     }

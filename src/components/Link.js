@@ -10,7 +10,9 @@ const Link = ({ href, className, onLinkClick, children }) => {
 
     const navEvent = new PopStateEvent('popstate');
     window.dispatchEvent(navEvent);
-    onLinkClick();
+    if (onLinkClick) {
+      onLinkClick();
+    }
   };
 
   return (
